@@ -1,14 +1,15 @@
 package docrob.demo2;
 
+import docrob.demo2.models.Person;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-@WebServlet(name = "personServlet", urlPatterns = "/person")
+@WebServlet(name = "personServletOld", urlPatterns = "/person-old")
 public class PersonServlet extends HttpServlet {
     private Person person = null;
 
